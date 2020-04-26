@@ -1,7 +1,7 @@
 package c18387973;
 
 import processing.core.*;
-
+//translate and rotate
 // This is an example of a visual that renders the waveform
 public class WavesVisual
 {
@@ -36,7 +36,7 @@ public class WavesVisual
 
     public void render()
     {
-        mv.colorMode(PApplet.HSB);//sets the colour
+        //mv.colorMode(PApplet.HSB);//sets the colour
         calcWave();
         for(int i = 0 ; i < mv.getAudioBuffer().size() ; i ++)
         {
@@ -44,11 +44,24 @@ public class WavesVisual
                 PApplet.map(i, 0, mv.getAudioBuffer().size(), 0, 255),  255, 255
             );
             for (int x = 0; x < yvalues.length; x++) {
-                mv.ellipse(x * xspacing, amplitude / 2 + yvalues[x], 16, 25 * mv.getAudioBuffer().get(i));
-                //mv.ellipse(x*xspacing, amplitude/2+yvalues[x], 16,  16 + 16 * mv.getAudioBuffer().get(i));
-                //mv.ellipse(x*xspacing, a(amplitude/2+yvalues[x]), 16,  25 + 25 * mv.getAudioBuffer().get(i));
-                //mv.ellipse(x * xspacing, amplitude / 2 + yvalues[x], 16, 16 + 16 * mv.getAudioBuffer().get(i));
-                //mv.ellipse(x*xspacing, amplitude/2+yvalues[x], 25,  30 + 30 * mv.getAudioBuffer().get(i));
+                mv.ellipse(x * xspacing, 10, 25, 16 + 16 * mv.getAudioBuffer().get(i));
+                mv.ellipse(x * xspacing, 10, 25,  10 + 10 * mv.getAudioBuffer().get(i));
+                //rect(,,,);
+
+                mv.ellipse(x * xspacing, 100, 25,  16 + 16 * mv.getAudioBuffer().get(i));
+                mv.ellipse(x * xspacing, 100, 25,  10 + 10 * mv.getAudioBuffer().get(i));
+
+                mv.ellipse(x * xspacing, 200, 25,  16 +  16* mv.getAudioBuffer().get(i));
+                mv.ellipse(x * xspacing, 200, 25,  10 + 10 * mv.getAudioBuffer().get(i));
+
+                mv.ellipse(x * xspacing, 300, 25, 16 + 16 * mv.getAudioBuffer().get(i));
+                mv.ellipse(x * xspacing, 300, 25,  10 + 10 * mv.getAudioBuffer().get(i));
+
+                mv.ellipse(x * xspacing, 400, 25,  16 +  16* mv.getAudioBuffer().get(i));
+                mv.ellipse(x * xspacing, 400, 25,  10 + 10 * mv.getAudioBuffer().get(i));
+
+                mv.ellipse(x * xspacing, 500, 25, 16 + 16 * mv.getAudioBuffer().get(i));
+                mv.ellipse(x * xspacing, 500, 25,  10 + 10 * mv.getAudioBuffer().get(i));
             }
         }
     }

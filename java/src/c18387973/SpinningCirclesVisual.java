@@ -1,9 +1,10 @@
 package c18387973;
 
 import processing.core.*;
+import ie.tudublin.*;
 
 // This is an example of a visual that renders the waveform
-public class SpinningCirclesVisual
+public class SpinningCirclesVisual extends Visual
 {
     MyVisual mv;
     float x;
@@ -18,20 +19,19 @@ public class SpinningCirclesVisual
     public void render()
     {
         mv.colorMode(PApplet.HSB);
-        for(int i = 0 ; i < mv.getAudioBuffer().size() ; i ++)
-        {
-            mv.stroke(
-                PApplet.map(i, 0, mv.getAudioBuffer().size(), 0, 255),  255, 255
-            );
-            mv.ellipse(mv.width / 2, mv.height / 2, 100, 100);
-            mv.ellipse(mv.width / 2, mv.height / 2, 200, 200);
-            mv.ellipse(mv.width / 2, mv.height / 2, 300, 300 );
-            mv.ellipse(mv.width / 2, mv.height / 2, 400, 400 );
-            mv.ellipse(mv.width / 2, mv.height / 2, 500, 500 );
-            mv.ellipse(mv.width / 2, mv.height / 2, 600, 600);
-            mv.ellipse(mv.width / 2, mv.height / 2, 700, 700 );
-            mv.ellipse(mv.width / 2, mv.height / 2, 700, 700 );
-        }
+        stroke(map(getSmoothedAmplitude(), 0, 1, 0, 255), 255, 255);
+        ellipse(width / 2, height / 2, 100, 100);
+        fill(100,50,200);
+        stroke(map(getSmoothedAmplitude(), 0, 1, 0, 255),255, 255);
+        ellipse(width / 2, height / 2, 200, 200);
+        fill(255,0,200);
+        ellipse(width / 2, height / 2, 300, 300);
+
+        fill(255,255,255);
+        ellipse(width , height , 200, 200);
+
+        fill(255,255,255);
+        ellipse(width , height , 450, 450);
 
     }
 }

@@ -6,13 +6,13 @@ public class MyVisual extends Visual
 {    
     //WaveForm wf;
     WavesVisual wf;
-    AudioBandsVisual abv;
+    //AudioBandsVisual abv;
+    Intro it;
     //SpinningCirclesVisual sp;
 
     public void settings()
     {
         size(512, 500, P3D);
-        println("CWD: " + System.getProperty("user.dir"));
         // Use this to make fullscreen
         //fullScreen();
 
@@ -48,24 +48,11 @@ public class MyVisual extends Visual
     {
         calculateAverageAmplitude();
         wf = new WavesVisual(this);
+        it = new Intro(this);
+        //abv = new AudioBandsVisual(this);
         background(0);
-        noFill();
-        stroke(map(getSmoothedAmplitude(), 0, 1, 0, 255), 255, 255);
-        ellipse(width / 2, height / 2, 100, 100);
-        fill(100,50,200);
-        stroke(map(getSmoothedAmplitude(), 0, 1, 0, 255),255, 255);
-        ellipse(width / 2, height / 2, 200, 200);
-        fill(255,0,200);
-        ellipse(width / 2, height / 2, 300, 300);
-
-        fill(255,255,255);
-        ellipse(width , height , 200, 200);
-
-        fill(255,255,255);
-        ellipse(width , height , 450, 450);
-        //ellipse(width / 2, height / 2, 500, 500);
-        //ellipse(width / 2, height / 2, 600, 600);
-        //ellipse(width / 2, height / 2, 700, 700);
+        
+    
 
         /*
         try
@@ -88,6 +75,7 @@ public class MyVisual extends Visual
         //wf.render();
         //abv.render();
         wf.render();
+        it.render();
         //sp.render();
     }
 
