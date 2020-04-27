@@ -8,6 +8,7 @@ public class MyVisual extends Visual
     WavesVisual wf;
     //AudioBandsVisual abv;
     Intro it;
+    SpinningSquaresVisual sp;
     //SpinningCirclesVisual sp;
 
     public void settings()
@@ -49,6 +50,7 @@ public class MyVisual extends Visual
         calculateAverageAmplitude();
         wf = new WavesVisual(this);
         it = new Intro(this);
+        sp = new SpinningSquaresVisual(this);
         //abv = new AudioBandsVisual(this);
         background(0);
         
@@ -72,11 +74,10 @@ public class MyVisual extends Visual
 
         // Call this is you want to get the average amplitude
         //calculateAverageAmplitude();        
-        //wf.render();
         //abv.render();
-        wf.render();
-        it.render();
-        //sp.render();
+        //wf.render();
+        //it.render();
+        sp.render();
     }
 
 }    
