@@ -1,6 +1,6 @@
 # Music Visualiser Project
 
-Name: Erifeoluwa O.Jamgbadi
+Name: Erifeoluwa O Jamgbadi
 
 Student Number:  C18387973
 
