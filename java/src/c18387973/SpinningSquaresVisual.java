@@ -13,10 +13,10 @@ public class SpinningSquaresVisual {
     public void render()
     {
         mv.fill(255);  // Set fill to white
-        mv.rect(450, 50, 30, 30);  
+        mv.rect(710, 650, 330, 430);  
 
         mv.fill(100);  // Set fill to gray
-        mv.rect(350, 50, 30, 30); 
+        mv.rect(350, 250, 300, 330); 
     }
 
 }
