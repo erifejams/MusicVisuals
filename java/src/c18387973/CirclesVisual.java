@@ -4,13 +4,13 @@ import processing.core.*;
 import ie.tudublin.*;
 
 // This is an example of a visual that renders the waveform
-public class SpinningCirclesVisual extends Visual {
+public class CirclesVisual extends Visual {
     MyVisual mv;
     float x;
     float y;
     float size;
 
-    public SpinningCirclesVisual(MyVisual mv)
+    public CirclesVisual(MyVisual mv)
     {
         this.mv = mv;
     }

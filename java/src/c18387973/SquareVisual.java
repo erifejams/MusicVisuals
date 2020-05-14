@@ -3,10 +3,10 @@ package c18387973;
 import processing.core.*;
 
 // This is an example of a visual that renders the waveform
-public class SpinningSquaresVisual {
+public class SquareVisual {
     MyVisual mv;
 
-    public SpinningSquaresVisual(MyVisual mv) {
+    public SquareVisual(MyVisual mv) {
         this.mv = mv;
     }
 

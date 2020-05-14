@@ -3,16 +3,18 @@ package c18387973;
 //import ie.tudublin.*;
 import ie.tudublin.Visual;
 import ie.tudublin.VisualException;
-import processing.core.*;
+//import processing.core.*;
    
 public class MyVisual extends Visual
-{    
-    //WaveForm wf;
-    WavesVisual wf;
+{    	
+    WaveForm wf;
+    WavesVisual wv;
     AudioBandsVisual abv;
     Intro it;
-    //SpinningSquaresVisual sp;
-    //SpinningCirclesVisual sp;
+    //SquareVisual sp;
+    //ArmyBombVisual ab; 
+    MembersNameDrop mn;
+    CirclesVisual cv;
 
     public void settings()
     {
@@ -20,16 +22,13 @@ public class MyVisual extends Visual
         //println("CWD: " + System.getProperty("user.dir"));
     }
 
-    PGraphics pg;
     public void setup()
     {
         colorMode(HSB);
         startMinim();
-        pg = createGraphics(40,40);
         // Call loadAudio to load an audio file to process 
         loadAudio("Dionysus.mp3");   
         getAudioPlayer().play();
-       
         //abv = new AudioBandsVisual(this);
     }
 
@@ -39,9 +38,10 @@ public class MyVisual extends Visual
         {
             getAudioPlayer().cue(0);
             getAudioPlayer().play();
-        } // switch
+        } 
     }
    
+    
     public void draw()
     {
         background(0);
@@ -55,15 +55,35 @@ public class MyVisual extends Visual
             e.printStackTrace();
         }
         calculateFrequencyBands();
-        it = new Intro(this);
-        //wf = new WavesVisual(this);
-        //abv = new AudioBandsVisual(this);  
-        //abv.render();  
-        //wf.render();
-        it.render();
-        //calculateAverageAmplitude();
-        //sp = new SpinningSquaresVisual(this);
+
+        //scene 1
+        //it = new Intro(this);
         //it.render();
+
+        //scene 2
+        //wv = new WavesVisual(this);
+        //wv.render();
+
+        //scene3
+        //mn = new MembersNameDrop(this);
+        //abv = new AudioBandsVisual(this);  
+        //mn.render();
+        //abv.render();
+
+        //scene4
+        wf = new WaveForm(this);
+        //cv = new CirclesVisual(this);
+        wf.render();
+        //cv.render();
+
+        //scene5
+        //ab = new ArmyBombVisual(this);
+        //ab.render();
+
+        //sp = new SpinningSquaresVisual(this);
         //sp.render();
     }
+
+    //want to do a class with the names of the members, so that when a user presses a key, their names will show up on the screen. also thinking of doing their names with the colours they like
+        
 }    

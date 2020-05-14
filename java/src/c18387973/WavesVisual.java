@@ -40,33 +40,34 @@ public class WavesVisual
         calcWave();
         for(int i = 0 ; i < mv.getAudioBuffer().size() ; i ++)
         {
-            mv.stroke(
-                PApplet.map(i, 0, mv.getAudioBuffer().size(), 0, 255),  255, 255
-            );
+            //mv.stroke(PApplet.map(i, 0, mv.getAudioBuffer().size(), 0, 255),  255, 255);
+            //mv.fill(PApplet.map(i, 0, mv.getAudioBuffer().get(i), 0, 255),  255*mv.getAudioBuffer().get(i), 255*mv.getAudioBuffer().get(i));
+            mv.stroke(PApplet.map(i, 0, mv.getAudioBuffer().size(), 0, 255*mv.getAudioBuffer().get(i)),  255, 255);
+            mv.fill(PApplet.map(i, 0, mv.getAudioBuffer().get(i), 0, 255*mv.getAudioBuffer().get(i)),  255, 255*mv.getAudioBuffer().get(i));
             for (int x = 0; x < yvalues.length; x++) {
                 mv.ellipse(x * xspacing, 10, 25, 16+ 16 * mv.getAudioBuffer().get(i));
-                //mv.ellipse(x * xspacing, 10, 25,  10 + 10 * mv.getBands().length);
+                mv.ellipse(x * xspacing, 10, 25,  10 + 10 * mv.getAudioBuffer().get(i));
                 //rect(,,,);
 
 
                 mv.ellipse(x * xspacing, 100, 25,  16 + 16 * mv.getAudioBuffer().get(i));
-                //mv.ellipse(x * xspacing, 100, 25,  10 + 10 * mv.getAudioBuffer().get(i));
+                mv.ellipse(x * xspacing, 100, 25,  10 + 10 * mv.getAudioBuffer().get(i));
      
 
                 mv.ellipse(x * xspacing, 200, 25,  16 +  16* mv.getAudioBuffer().get(i));
-                //mv.ellipse(x * xspacing, 200, 25,  10 + 10 * mv.getAudioBuffer().get(i));
+                mv.ellipse(x * xspacing, 200, 25,  10 + 10 * mv.getAudioBuffer().get(i));
 
                 mv.ellipse(x * xspacing, 300, 25, 16 + 16 * mv.getAudioBuffer().get(i));
-                //mv.ellipse(x * xspacing, 300, 25,  10 + 10 * mv.getAudioBuffer().get(i));
+                mv.ellipse(x * xspacing, 300, 25,  10 + 10 * mv.getAudioBuffer().get(i));
 
                 mv.ellipse(x * xspacing, 400, 25,  16 +  16* mv.getAudioBuffer().get(i));
-                //mv.ellipse(x * xspacing, 400, 25,  10 + 10 * mv.getAudioBuffer().get(i));
+                mv.ellipse(x * xspacing, 400, 25,  10 + 10 * mv.getAudioBuffer().get(i));
 
                 mv.ellipse(x * xspacing, 500, 25, 16 + 16 * mv.getAudioBuffer().get(i));
-                //mv.ellipse(x * xspacing, 500, 25,  10 + 10 * mv.getAudioBuffer().get(i));
+                mv.ellipse(x * xspacing, 500, 25,  10 + 10 * mv.getAudioBuffer().get(i));
 
                 mv.ellipse(x * xspacing, 600, 25, 16 + 16 * mv.getAudioBuffer().get(i));
-                //mv.ellipse(x * xspacing, 600, 25,  10 + 10 * mv.getAudioBuffer().get(i));
+                mv.ellipse(x * xspacing, 600, 25,  10 + 10 * mv.getAudioBuffer().get(i));
             }
         }
     }

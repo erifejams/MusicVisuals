@@ -1,5 +1,5 @@
+//this is scene one
 package c18387973;
-
 import processing.core.*;
 
 public class Intro
@@ -19,22 +19,20 @@ public class Intro
         {
             mv.fill(257 * mv.getAudioBuffer().get(i),25 *mv.getAudioBuffer().get(i),157 *mv.getAudioBuffer().get(i) );//colours didn't happen like i wanted it to, but this cool feature of it flashing did
             mv.textSize(70);
-            mv.text("Dionysus (BTS)", 850,  370);
-            mv.text("(By EJ) ",850,470);
+            mv.text("Dionysus (BTS)", 850,  370); //name of the song
+            mv.text("(By EJ) ",850,470); //my name
         }
 
         for(int i = 0 ; i < mv.getAudioBuffer().size() ; i ++)
         {
             mv.stroke(PApplet.map(i, 0, mv.getAudioBuffer().size(), 50, 200),  200, 255);
             mv.fill(255 * mv.getAudioBuffer().size());
-            mv.rotate(r);
-            float c = mv.random(10,35);
-            float b = mv.random(15,45);
+            mv.rotate(r); //rotating the angle of the shape
             //mv.ellipse(650+r,170,c, c);
             //mv.rect(750+r,170,b, b);
-            mv.triangle(450+r,170,c, b,c,b);
-            mv.triangle(650+r,170,c, b,c,b);
-            r= r +0.4F; // for rotating by tthe angle
+            mv.triangle(450+r,170, mv.random(15,35), mv.random(15,45), mv.random(15,35), mv.random(15,45));
+            mv.triangle(650+r,170,mv.random(15,35), mv.random(15,45), mv.random(15,5), mv.random(15,45));
+            r= r +0.4F; // for rotating by the angle
         }
     }
 }

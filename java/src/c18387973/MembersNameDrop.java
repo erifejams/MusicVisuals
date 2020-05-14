@@ -1,13 +1,12 @@
-//basically a big circle is transparent and has a circle inside, that changes colour. those things going down from all four sides
 package c18387973;
 
-//import processing.core.*;
-/*
-public class ArmyBombVisual
+import processing.core.*;
+
+public class MembersNameDrop
 {
     MyVisual mv;
 
-    public ArmyBombVisual(MyVisual mv)
+    public MembersNameDrop(MyVisual mv)
     {
         this.mv = mv;
     }
@@ -18,7 +17,6 @@ public class ArmyBombVisual
         for(int i = 0 ; i < mv.getAudioBuffer().size() ; i ++)
         {
            mv.fill(PApplet.map(i, 0, mv.getAudioBuffer().size(), 50, 255),  200, 255);
-            //mv.fill(102, 0, 51);
             mv.textSize(50);
             //mv.text("Dionysus (BTS)", 500* mv.getAudioBuffer().get(i), 270 );
             mv.text("(joon) ",0,370 * mv.getAudioBuffer().get(i));
@@ -32,4 +30,3 @@ public class ArmyBombVisual
         }
     }
 }
-*/
