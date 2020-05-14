@@ -56,10 +56,10 @@ public class MyVisual extends Visual
         }
         calculateFrequencyBands();
         it = new Intro(this);
-        wf = new WavesVisual(this);
+        //wf = new WavesVisual(this);
         //abv = new AudioBandsVisual(this);  
         //abv.render();  
-        wf.render();
+        //wf.render();
         it.render();
         //calculateAverageAmplitude();
         //sp = new SpinningSquaresVisual(this);
