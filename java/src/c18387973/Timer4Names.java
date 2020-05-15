@@ -2,7 +2,7 @@
 package c18387973;
 
 import processing.core.*;
-/*
+
 class Timer4Names
 {
     int savedTime;
@@ -25,17 +25,3 @@ class Timer4Names
         }
     }
 }
-
-class Names extends Timer4Names{
-
-    color c;
-    
-    public Names(MyVisual mv,int c_) {
-        c = c_;
-    }
-
-    public void render(){
-        if (passedTime == 20) {
-    }    
-}
-*/

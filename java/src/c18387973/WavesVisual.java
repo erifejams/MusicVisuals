@@ -1,8 +1,7 @@
 package c18387973;
 
 import processing.core.*;
-//translate and rotate
-// This is an example of a visual that renders the waveform
+
 public class WavesVisual
 {
     MyVisual mv;
@@ -11,7 +10,6 @@ public class WavesVisual
     float amplitude = 70.0F;  //shows the height of the circles
     float dx;  // Value for incrementing x, a function of xspacing
     float[] yvalues;  // Using an array to store height values for the wave
-    float a= 4;
 
     public WavesVisual(MyVisual mv)
     {
@@ -47,12 +45,9 @@ public class WavesVisual
             for (int x = 0; x < yvalues.length; x++) {
                 mv.ellipse(x * xspacing, 10, 25, 16+ 16 * mv.getAudioBuffer().get(i));
                 mv.ellipse(x * xspacing, 10, 25,  10 + 10 * mv.getAudioBuffer().get(i));
-                //rect(,,,);
-
 
                 mv.ellipse(x * xspacing, 100, 25,  16 + 16 * mv.getAudioBuffer().get(i));
                 mv.ellipse(x * xspacing, 100, 25,  10 + 10 * mv.getAudioBuffer().get(i));
-     
 
                 mv.ellipse(x * xspacing, 200, 25,  16 +  16* mv.getAudioBuffer().get(i));
                 mv.ellipse(x * xspacing, 200, 25,  10 + 10 * mv.getAudioBuffer().get(i));

@@ -30,7 +30,6 @@ public class MyVisual extends Visual
         loadAudio("Dionysus.mp3");   
         getAudioPlayer().play();
         setFrameSize(256);
-        //abv = new AudioBandsVisual(this);
     }
 
     public void keyPressed()
@@ -58,43 +57,49 @@ public class MyVisual extends Visual
         calculateFrequencyBands();
 
         /*
-        if (keyCode == UP)
+        if(key == CODED)
         {
-            //scene 1
-            it = new Intro(this);
-            it.render();
+            if (keyCode == UP)
+            {
+                //scene 1
+                it = new Intro(this);
+                it.render();
+            }
+            else
+            if(keyCode == DOWN)
+            {
+                //scene 2
+                wv = new WavesVisual(this);
+                wv.render();
+            }
+            else 
+            if(keyCode == LEFT)
+            {
+                //scene3
+                mn = new MembersNameDrop(this);
+                abv = new AudioBandsVisual(this);  
+                mn.render();
+                abv.render();
+            }
+            else 
+            if(keyCode == RIGHT)
+            {
+                //scene4
+                wf = new WaveForm(this);
+                wf.render();
+            }
+            else 
+            if(keyCode == )
+            {
+                //scene5
+                cv = new CirclesVisual(this);
+                cv.render();
+                cv.display();
+            }
         }
-        else
-        if(keyCode == DOWN)
-        {
-            //scene 2
-            wv = new WavesVisual(this);
-            wv.render();
-        }
-        else 
-        if(keyCode == LEFT)
-        {
-            //scene3
-            mn = new MembersNameDrop(this);
-            abv = new AudioBandsVisual(this);  
-            mn.render();
-            abv.render();
-        }
-        else 
-        if(keyCode == RIGHT)
-        {
-            //scene4
-            wf = new WaveForm(this);
-            wf.render();
-        }
-
         */
-
-        //scene5
-        cv = new CirclesVisual(this);
-        cv.render();
-
-        //sp = new SpinningSquaresVisual(this);
+        
+        //sp = new SquareVisual(this);
         //sp.render();
     }
 
