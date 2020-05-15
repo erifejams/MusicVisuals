@@ -2,7 +2,7 @@
 package c18387973;
 
 import processing.core.*;
-
+/*
 class Timer4Names
 {
     int savedTime;
@@ -38,3 +38,4 @@ class Names extends Timer4Names{
         if (passedTime == 20) {
     }    
 }
+*/

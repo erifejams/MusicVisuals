@@ -12,7 +12,7 @@ public class MyVisual extends Visual
     AudioBandsVisual abv;
     Intro it;
     //SquareVisual sp;
-    Timer4Names tn; 
+    //Timer4Names tn; 
     MembersNameDrop mn;
 
 
@@ -56,23 +56,35 @@ public class MyVisual extends Visual
         }
         calculateFrequencyBands();
 
-        //scene 1
-        //it = new Intro(this);
-        //it.render();
-
-        //scene 2
-        //wv = new WavesVisual(this);
-        //wv.render();
-
-        //scene3
-        //mn = new MembersNameDrop(this);
-        //abv = new AudioBandsVisual(this);  
-        //mn.render();
-        //abv.render();
-
-        //scene4
-        //wf = new WaveForm(this);
-        //wf.render();
+        if (keyCode == UP)
+        {
+            //scene 1
+            it = new Intro(this);
+            it.render();
+        }
+        else
+        if(keyCode == DOWN)
+        {
+            //scene 2
+            wv = new WavesVisual(this);
+            wv.render();
+        }
+        else 
+        if(keyCode == LEFT)
+        {
+            //scene3
+            mn = new MembersNameDrop(this);
+            abv = new AudioBandsVisual(this);  
+            mn.render();
+            abv.render();
+        }
+        else 
+        if(keyCode == RIGHT)
+        {
+            //scene4
+            wf = new WaveForm(this);
+            wf.render();
+        }
 
         //scene5
         //cv = new CirclesVisual(this);
