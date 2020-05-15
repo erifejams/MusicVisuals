@@ -1,10 +1,9 @@
 package c18387973;
 
 import processing.core.*;
-import ie.tudublin.*;
 
 // This is an example of a visual that renders the waveform
-public class CirclesVisual extends Visual {
+public class CirclesVisual {
     MyVisual mv;
     float x;
     float y;
@@ -16,26 +15,29 @@ public class CirclesVisual extends Visual {
     }
 
     float r = 0;
+    float d =8;
+    float n =5;
 
     public void render()
     {
-        //mv.colorMode(PApplet.HSB);
-        for(int i = 0 ; i < mv.getAudioBuffer().size() ; i ++)
-        {
-            mv.stroke(PApplet.map(i, 0, mv.getAudioBuffer().size(), 50, 200),  200, 255);
-            mv.fill(255 *mv.getAudioBuffer().size());
-            //mv.rotate(r); //rotating the angle of the shape
-            /*
-            mv.ellipse(650+r,170,mv.random(15,45), mv.random(15,45));
-            mv.rect(750+r,170,mv.random(15,45), mv.random(15,45));
-            */
-            mv.triangle(250,170, 300, 450, 400,100); //x1,y1,x2,y2,x3,y3
-            mv.triangle(450,170, 300, 450, 400,100); //x1,y1,x2,y2,x3,y3
-            mv.triangle(650,170, 300, 450, 400,100); //x1,y1,x2,y2,x3,y3
-            mv.triangle(850,170, 300, 450, 400,100); //x1,y1,x2,y2,x3,y3
-            mv.triangle(1050,170, 300, 450, 400,100); //x1,y1,x2,y2,x3,y3
-            mv.triangle(1050,270, 300, 450, 400,100); //x1,y1,x2,y2,x3,y3
-           // r= r +0.4F; // for rotating by the angle
+        float k = 7;
+        mv.translate(mv.width /2 , mv.height/2);
+        mv.beginShape();
+        mv.stroke(255);
+        /*
+        mv.ellipse(650+r,170,mv.random(15,45), mv.random(15,45));
+        mv.rect(750+r,170,mv.random(15,45), mv.random(15,45));
+        */
+
+        mv.noFill();
+        mv.strokeWeight(4);
+        for (float a = 0; a< PConstants.TWO_PI; a += 0.1) {//polar to cartesian transformation
+            float r = 200 * MyVisual.cos(k * a);
+            float x = r * MyVisual.cos(a);
+            float y = r* MyVisual.sin(a);
+            mv.vertex(x,y);
         }
+        mv.endShape(PConstants.CLOSE);
+        
     }
 }
