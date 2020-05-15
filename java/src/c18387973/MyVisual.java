@@ -6,15 +6,15 @@ import ie.tudublin.VisualException;
 //import processing.core.*;
    
 public class MyVisual extends Visual
-{    	
+{   
     WaveForm wf;
     WavesVisual wv;
     AudioBandsVisual abv;
     Intro it;
     //SquareVisual sp;
-    //ArmyBombVisual ab; 
+    Timer4Names tn; 
     MembersNameDrop mn;
-    CirclesVisual cv;
+
 
     public void settings()
     {
@@ -75,17 +75,13 @@ public class MyVisual extends Visual
         //wf.render();
 
         //scene5
-        cv = new CirclesVisual(this);
-        cv.render();
-
-        //scene5
-        //ab = new ArmyBombVisual(this);
-        //ab.render();
+        //cv = new CirclesVisual(this);
+        //cv.render();
 
         //sp = new SpinningSquaresVisual(this);
         //sp.render();
     }
 
     //want to do a class with the names of the members, so that when a user presses a key, their names will show up on the screen. also thinking of doing their names with the colours they like
-        
+    
 }    

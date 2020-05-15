@@ -15,24 +15,20 @@ public class CirclesVisual extends Visual {
         this.mv = mv;
     }
 
+    float r = 0;
+
     public void render()
     {
-        mv.colorMode(PApplet.HSB);
-        stroke(map(getSmoothedAmplitude(), 0, 1, 0, 255), 255, 255);
-        ellipse(width / 2, height / 2, 100, 100);
-        fill(100,50,200);
-        stroke(map(getSmoothedAmplitude(), 0, 1, 0, 255),255, 255);
-        ellipse(width / 2, height / 2, 200, 200);
-        fill(255,0,200);
-        ellipse(width / 2, height / 2, 300, 300);
-
-        fill(255,255,255);
-        ellipse(width , height , 200, 200);
-
-        fill(255,255,255);
-        ellipse(width , height , 450, 450);
-
-        
-
+        //mv.colorMode(PApplet.HSB);
+        for(int i = 0 ; i < mv.getAudioBuffer().size() ; i ++)
+        {
+            mv.stroke(PApplet.map(i, 0, mv.getAudioBuffer().size(), 50, 200),  200, 255);
+            mv.fill(255 * mv.getAudioBuffer().size());
+            mv.rotate(r); //rotating the angle of the shape
+            mv.ellipse(650+r,170,mv.random(15,45), mv.random(15,45));
+            mv.rect(750+r,170,mv.random(15,45), mv.random(15,45));
+            mv.triangle(450,170, 300, 450, 400,100);
+            r= r +0.4F; // for rotating by the angle
+        }
     }
 }
