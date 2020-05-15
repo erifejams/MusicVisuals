@@ -71,10 +71,12 @@ public class MyVisual extends Visual
         //abv.render();
 
         //scene4
-        wf = new WaveForm(this);
-        //cv = new CirclesVisual(this);
-        wf.render();
-        //cv.render();
+        //wf = new WaveForm(this);
+        //wf.render();
+
+        //scene5
+        cv = new CirclesVisual(this);
+        cv.render();
 
         //scene5
         //ab = new ArmyBombVisual(this);
