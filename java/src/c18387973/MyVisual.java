@@ -11,7 +11,7 @@ public class MyVisual extends Visual
     WavesVisual wv;
     AudioBandsVisual abv;
     Intro it;
-    //SquareVisual sp;
+    CirclesVisual cv;
     //Timer4Names tn; 
     MembersNameDrop mn;
 
@@ -29,6 +29,7 @@ public class MyVisual extends Visual
         // Call loadAudio to load an audio file to process 
         loadAudio("Dionysus.mp3");   
         getAudioPlayer().play();
+        setFrameSize(256);
         //abv = new AudioBandsVisual(this);
     }
 
@@ -56,6 +57,7 @@ public class MyVisual extends Visual
         }
         calculateFrequencyBands();
 
+        /*
         if (keyCode == UP)
         {
             //scene 1
@@ -86,9 +88,11 @@ public class MyVisual extends Visual
             wf.render();
         }
 
+        */
+
         //scene5
-        //cv = new CirclesVisual(this);
-        //cv.render();
+        cv = new CirclesVisual(this);
+        cv.render();
 
         //sp = new SpinningSquaresVisual(this);
         //sp.render();
