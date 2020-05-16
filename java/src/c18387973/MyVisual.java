@@ -14,7 +14,7 @@ public class MyVisual extends Visual
     AudioBandsVisual abv;
     Intro it;
     CirclesVisual cv;
-    //Timer4Names tn; 
+    Names n; 
     MembersNameDrop mn;
     SquareVisual sv;
     
@@ -89,7 +89,7 @@ public class MyVisual extends Visual
             myvision[i].display();
         }
         */
-        /*
+    
         if(key == CODED)
         {
             if (keyCode == UP)
@@ -104,7 +104,9 @@ public class MyVisual extends Visual
             {
                 //scene 2
                 wv = new WavesVisual(this);
+                n = new Names(this);
                 wv.render();
+                n.render();
             }
             else 
             if(keyCode == LEFT)
@@ -124,6 +126,7 @@ public class MyVisual extends Visual
             }
             
         }
+
         if(key == ENTER)
         {
             //scene5
@@ -131,14 +134,12 @@ public class MyVisual extends Visual
             cv.render();
             cv.display();
         }
-        else
-        
 
-        if (key == DELETE)
-        {}
-        */
-        sv = new SquareVisual(this);
-        sv.render();
+        if (key == TAB)
+        {
+            sv = new SquareVisual(this);
+            sv.render();
+        }
         
     }
 }  

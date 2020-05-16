@@ -28,8 +28,7 @@ public class Intro extends MyVision
             mv.stroke(PApplet.map(i, 0, mv.getAudioBuffer().size(), 50, 200),  200, 255);
             mv.fill(255 * mv.getAudioBuffer().size());
             mv.rotate(r); //rotating the angle of the shape
-            //mv.ellipse(650+r,170,c, c);
-            //mv.rect(750+r,170,b, b);
+            mv.strokeWeight(1);
             mv.triangle(450+r,170, mv.random(15,35), mv.random(15,45), mv.random(15,35), mv.random(15,45));
             mv.triangle(650+r,170,mv.random(15,35), mv.random(15,45), mv.random(15,5), mv.random(15,45));
             r= r +0.4F; // for rotating by the angle
