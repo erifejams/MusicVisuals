@@ -7,7 +7,7 @@ import ie.tudublin.VisualException;
    
 public class MyVisual extends Visual
 {   
-    /*
+    
     //classes
     WaveForm wf;
     WavesVisual wv;
@@ -17,13 +17,17 @@ public class MyVisual extends Visual
     //Timer4Names tn; 
     MembersNameDrop mn;
     SquareVisual sv;
-    */
+    
+    //polymorphism 
+    //myvision array
+    MyVision[] myvision = new MyVision[10];
 
     public void settings()
     {
         size(500, 500, P2D);
     }
 
+    int j= 0;
     public void setup()
     {
         colorMode(HSB);
@@ -32,7 +36,27 @@ public class MyVisual extends Visual
         loadAudio("Dionysus.mp3");   
         getAudioPlayer().play();
         setFrameSize(256);
+
+        //tried doing the polymorphism, i couldn't do it because I'm using the keypressed in the draw, so i didn't
+        //know how to loop it around since i was getting the user input from certain keys, so i didn't know my way around
+        //that, but here is the code, if I was able to include the polymorphism
+        /*
+        //initializing the array
+        myvision[1] = new Intro(this);
+        myvision[2] = new WavesVisual(this);
+        myvision[3]= new MembersNameDrop(this);
+        myvision[4]= new AudioBandsVisual(this); 
+        myvision[5]= new WaveForm(this);
+        myvision[6] = new CirclesVisual(this);
+
+        //loop through the array
+        for(MyVision v : myvision){
+            v.render();
+            v.display();
+        }
+        */
     }
+
 
     public void keyPressed()
     {
@@ -42,7 +66,6 @@ public class MyVisual extends Visual
             getAudioPlayer().play();
         } 
     }
-   
     
     public void draw()
     {
@@ -58,6 +81,14 @@ public class MyVisual extends Visual
         }
         calculateFrequencyBands();
 
+        /* here's the remaining code for the polymorphism, here is what i would include, if i wasn't doing the keypress
+        thing in the draw
+        for (int i=0;i< myvision.length ; i++)
+        {
+            myvision[i].render();
+            myvision[i].display();
+        }
+        */
         /*
         if(key == CODED)
         {
@@ -66,7 +97,7 @@ public class MyVisual extends Visual
                 //scene 1
                 it = new Intro(this);
                 it.render();
-                visions.get(vision).render()
+                
             }
             else
             if(keyCode == DOWN)
@@ -91,18 +122,24 @@ public class MyVisual extends Visual
                 wf = new WaveForm(this);
                 wf.render();
             }
-            else 
-            if(keyCode == )
-            {
-                //scene5
-                cv = new CirclesVisual(this);
-                cv.render();
-                cv.display();
-            }
+            
         }
-        */
+        if(key == ENTER)
+        {
+            //scene5
+            cv = new CirclesVisual(this);
+            cv.render();
+            cv.display();
+        }
+        else
+        
 
-        //sv = new SquareVisual(this);
-        //sv.render();
+        if (key == DELETE)
+        {}
+        */
+        sv = new SquareVisual(this);
+        sv.render();
+        
     }
-}    
+}  
+ 

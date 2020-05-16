@@ -23,6 +23,7 @@ public class WaveForm extends MyVision
         for(int i = 0 ; i < mv.getAudioBuffer().size() ; i ++)
         {
             mv.stroke(PApplet.map(i, 0, mv.getAudioBuffer().size(), 0, 255), 255, 255);
+            mv.strokeWeight(1);
             mv.line(i, cy, i + i  , cy + cy * mv.getAudioBuffer().get(i));
             mv.line(i * gap, cy, i * gap, cy + cy * mv.getAudioBuffer().get(i));
         }
