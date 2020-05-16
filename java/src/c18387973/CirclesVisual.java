@@ -2,7 +2,7 @@ package c18387973;
 
 import processing.core.*;
 
-public class CirclesVisual {
+public class CirclesVisual extends MyVision {
     MyVisual mv;
     
     public CirclesVisual(MyVisual mv)

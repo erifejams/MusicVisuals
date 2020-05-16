@@ -2,7 +2,7 @@ package c18387973;
 
 import processing.core.*;
 
-public class MembersNameDrop
+public class MembersNameDrop extends MyVision 
 {
     MyVisual mv;
 

@@ -3,7 +3,7 @@ package c18387973;
 import processing.core.*;
 
 // This is an example of a visual that uses the audio bands
-public class AudioBandsVisual
+public class AudioBandsVisual extends MyVision 
 {
     MyVisual mv;
 

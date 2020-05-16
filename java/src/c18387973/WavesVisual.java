@@ -2,7 +2,7 @@ package c18387973;
 
 import processing.core.*;
 
-public class WavesVisual
+public class WavesVisual extends MyVision 
 {
     MyVisual mv;
     int xspacing = 25;   //reduce this to make the cicles closer

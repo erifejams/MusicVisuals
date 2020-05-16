@@ -7,6 +7,8 @@ import ie.tudublin.VisualException;
    
 public class MyVisual extends Visual
 {   
+    /*
+    //classes
     WaveForm wf;
     WavesVisual wv;
     AudioBandsVisual abv;
@@ -14,12 +16,12 @@ public class MyVisual extends Visual
     CirclesVisual cv;
     //Timer4Names tn; 
     MembersNameDrop mn;
-
+    SquareVisual sv;
+    */
 
     public void settings()
     {
         size(500, 500, P2D);
-        //println("CWD: " + System.getProperty("user.dir"));
     }
 
     public void setup()
@@ -64,6 +66,7 @@ public class MyVisual extends Visual
                 //scene 1
                 it = new Intro(this);
                 it.render();
+                visions.get(vision).render()
             }
             else
             if(keyCode == DOWN)
@@ -98,11 +101,8 @@ public class MyVisual extends Visual
             }
         }
         */
-        
-        //sp = new SquareVisual(this);
-        //sp.render();
-    }
 
-    //want to do a class with the names of the members, so that when a user presses a key, their names will show up on the screen. also thinking of doing their names with the colours they like
-    
+        //sv = new SquareVisual(this);
+        //sv.render();
+    }
 }    

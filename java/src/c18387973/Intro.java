@@ -2,7 +2,7 @@
 package c18387973;
 import processing.core.*;
 
-public class Intro
+public class Intro extends MyVision 
 {
     MyVisual mv;
 
