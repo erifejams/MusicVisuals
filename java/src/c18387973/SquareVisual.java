@@ -29,6 +29,7 @@ public class SquareVisual extends MyVision  {
                 mv.fill(0);
                 mv.scale(0.95F);
                 mv.rotate(angle);
+                mv.strokeWeight(1);
 
                 //bottom of screen
                 mv.rect(400,600, 500,300*mv.getAudioBuffer().get(i));
