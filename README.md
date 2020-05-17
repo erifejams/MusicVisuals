@@ -46,7 +46,6 @@ What I am most proud of in the assigment are:
 [![YouTube](http://img.youtube.com/vi/OoKRbQnLbT4/0.jpg)](https://youtu.be/OoKRbQnLbT4)
 [![YouTube](http://img.youtube.com/vi/WUqwepm9zbQ/0.jpg)](https://youtu.be/WUqwepm9zbQ)
 
-
 # Images from my project
 
 ![An image](images/CircleVisual.png)
