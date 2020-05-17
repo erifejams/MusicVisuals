@@ -13,23 +13,31 @@ I implemented individual files. Each file has, it's own *creation* and the names
 - Fork this repository 
 - In the individual files, you will find the code for each of the visuals e.g. circlevisual, that I implemented 
 - all the individual files are brought together by myVisual.java, so press F5, when you want to compile/run the file
-- Press the keys specified in *HOW it works* to shift/go through the desired images 
+- Press the keys specified under the heading *how it works* to shift/go through the desired visual files
 
 # How it works
-UP =
-DOWN =
-TAB =
-RIGHT =
-LEFT =
+- UP =
+- DOWN =
+- TAB =
+- RIGHT =
+- LEFT =
 
 # What I am most proud of in the assignment
 What I am most proud of in the assigment are:
-1. How some of my visuals turned out, the colours and the presentation.
-1. The rose mathemathics, that I leart from a youtuber, but instead of using vertex, i used the circle for a type of rose/circle visual
+1. How some of my visuals react to the colours and make the visual stand out and look beautiful.
+
+1. How some of my visuals react to the music and change shapes accordingly.
+
+1. The rose mathemathics, that I learnt from a youtuber and wikipedia, but instead of using vertex, i used the circle for a type of rose/circle visual *(r = cos((k)*(theta)))*
+
 1. How all my individual files came together and interacts, when different keys, that I specified are pressed.
 
+1. Learnt how to use inheritance and polymorphism and apply it to the code in some ways
 
-# My Youtube video link is
+1. The imagery, that I created in the visuals.
+
+
+# My Youtube video link
 
 
 # Markdown Tutorial
