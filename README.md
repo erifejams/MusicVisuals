@@ -18,6 +18,8 @@ I implemented individual files. Each file has, it's own *creation* and the names
 
 # How it works
 Press these keys,  to be able to load these visuas:
+*warning: if you go from enter to backspace, depending on, if your computer lags, it may freeze, the file running so you might have to force close the processing display editor*
+
 - UP = Intro visual
 - BACKSPACE = Names and WavesVisual 
 - TAB = SquareVisual
@@ -54,33 +56,3 @@ What I am most proud of in the assigment are:
 ![An image](images/Waveform.png)
 ![An image](images/wavesandname.png)
 ![An image](images/audiobands.png)
-
-
-This is a [hyperlink](http://bryanduggan.org)
-
-
-This is code:
-
-```Java
-public void render()
-{
-	ui.noFill();
-	ui.stroke(255);
-	ui.rect(x, y, width, height);
-	ui.textAlign(PApplet.CENTER, PApplet.CENTER);
-	ui.text(text, x + width * 0.5f, y + height * 0.5f);
-}
-```
-
-So is this without specifying the language:
-
-```
-public void render()
-{
-	ui.noFill();
-	ui.stroke(255);
-	ui.rect(x, y, width, height);
-	ui.textAlign(PApplet.CENTER, PApplet.CENTER);
-	ui.text(text, x + width * 0.5f, y + height * 0.5f);
-}
-```
