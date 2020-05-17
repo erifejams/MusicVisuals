@@ -16,11 +16,13 @@ I implemented individual files. Each file has, it's own *creation* and the names
 - Press the keys specified under the heading *how it works* to shift/go through the desired visual files
 
 # How it works
-- UP =
-- DOWN =
-- TAB =
-- RIGHT =
-- LEFT =
+Press these keys,  to be able to load these visuas:
+- UP = Intro visual
+- BACKSPACE = Names and WavesVisual 
+- TAB = SquareVisual
+- DELETE = WaveForm visual
+- LEFT = MembersNameDrop and AudioBandsVisual
+- ENTER - CirclesVisual
 
 # What I am most proud of in the assignment
 What I am most proud of in the assigment are:
@@ -38,6 +40,8 @@ What I am most proud of in the assigment are:
 
 
 # My Youtube video link
+[![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](https://youtu.be/OoKRbQnLbT4)
+[![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](https://youtu.be/WUqwepm9zbQ)
 
 
 # Markdown Tutorial
