@@ -41,16 +41,16 @@ What I am most proud of in the assigment are:
 
 # My Youtube video links
 [![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](https://youtu.be/OoKRbQnLbT4)
-[![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](https://youtu.be/WUqwepm9zbQ)
+[![YouTube](http://img.youtu.be/vi/WUqwepm9zbQ/0.jpg)](https://youtu.be/WUqwepm9zbQ)
 
 # Images from my project
 
-![An image](images/p8.png)
-![An image](images/p8.png)
-![An image](images/p8.png)
-![An image](images/p8.png)
-![An image](images/p8.png)
-
+![An image](images/CircleVisual.png)
+![An image](images/Intro.png)
+![An image](images/SquareVisual.png)
+![An image](images/Waveform.png)
+![An image](images/wavesandname.png)
+![An image](images/audiobands.png)
 
 
 # Markdown Tutorial
@@ -69,10 +69,6 @@ This is a numbered list
 
 This is a [hyperlink](http://bryanduggan.org)
 
-# Headings
-## Headings
-#### Headings
-##### Headings
 
 This is code:
 
@@ -100,13 +96,6 @@ public void render()
 }
 ```
 
-This is an image using a relative URL:
-
-![An image](images/p8.png)
-
-This is an image using an absolute URL:
-
-![A different image](https://bryanduggandotorg.files.wordpress.com/2019/02/infinite-forms-00045.png?w=595&h=&zoom=2)
 
 This is a youtube video:
 
