@@ -39,9 +39,18 @@ What I am most proud of in the assigment are:
 1. The imagery, that I created in the visuals.
 
 
-# My Youtube video link
+# My Youtube video links
 [![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](https://youtu.be/OoKRbQnLbT4)
 [![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](https://youtu.be/WUqwepm9zbQ)
+
+# Images from my project
+
+![An image](images/p8.png)
+![An image](images/p8.png)
+![An image](images/p8.png)
+![An image](images/p8.png)
+![An image](images/p8.png)
+
 
 
 # Markdown Tutorial
@@ -103,12 +112,5 @@ This is a youtube video:
 
 [![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](https://www.youtube.com/watch?v=J2kHSSFA4NU)
 
-This is a table:
 
-| Heading 1 | Heading 2 |
-|-----------|-----------|
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
 
