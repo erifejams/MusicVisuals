@@ -28,7 +28,7 @@ What I am most proud of in the assigment are:
 
 1. How some of my visuals react to the music and change shapes accordingly.
 
-1. The rose mathemathics, that I learnt from a youtuber and wikipedia, but instead of using vertex, i used the circle for a type of rose/circle visual *(r = cos((k)*(theta)))*
+1. The rose mathemathics, that I learnt from a youtuber and wikipedia, but instead of using vertex, i used the circle for a type of rose/circle visual *(r = cos((k)(theta)))*
 
 1. How all my individual files came together and interacts, when different keys, that I specified are pressed.
 
