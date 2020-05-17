@@ -25,6 +25,7 @@ public class Intro extends MyVision
 
         for(int i = 0 ; i < mv.getAudioBuffer().size() ; i ++)
         {
+            mv.noStroke();
             mv.stroke(PApplet.map(i, 0, mv.getAudioBuffer().size(), 50, 200),  200, 255);
             mv.fill(255 * mv.getAudioBuffer().size());
             mv.rotate(r); //rotating the angle of the shape

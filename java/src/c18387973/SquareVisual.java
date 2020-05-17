@@ -25,12 +25,11 @@ public class SquareVisual extends MyVision  {
         {
             for(int i = 0 ; i < mv.getAudioBuffer().size() ; i ++)
             {
-                mv.stroke(PApplet.map(i, 0, mv.getAudioBuffer().size(), 0, 255*mv.getAudioBuffer().get(i)),  255, 255);
+                mv.stroke(PApplet.map(i, 0, mv.getAudioBuffer().size(), 0, 255*mv.getAudioBuffer().get(i)),  250, 355);
                 mv.fill(0);
                 mv.scale(0.95F);
                 mv.rotate(angle);
                 mv.strokeWeight(1);
-
                 //bottom of screen
                 mv.rect(400,600, 500,300*mv.getAudioBuffer().get(i));
                 mv.rect(-400,600, 500,300*mv.getAudioBuffer().get(i));

@@ -1,14 +1,12 @@
 package c18387973;
 
-//import ie.tudublin.*;
 import ie.tudublin.Visual;
 import ie.tudublin.VisualException;
-//import processing.core.*;
    
 public class MyVisual extends Visual
 {   
     
-    //classes
+    // classes
     WaveForm wf;
     WavesVisual wv;
     AudioBandsVisual abv;
@@ -31,11 +29,12 @@ public class MyVisual extends Visual
     public void setup()
     {
         colorMode(HSB);
+        setFrameSize(256);
         startMinim();
         // Call loadAudio to load an audio file to process 
-        loadAudio("Dionysus.mp3");   
+        loadAudio("Dionysus.mp3");  
+        //loadAudio("RM, SUGA, J-HOPE BTS - DDAENG (땡).mp3"); 
         getAudioPlayer().play();
-        setFrameSize(256);
 
         //tried doing the polymorphism, i couldn't do it because I'm using the keypressed in the draw, so i didn't
         //know how to loop it around since i was getting the user input from certain keys, so i didn't know my way around
@@ -99,16 +98,7 @@ public class MyVisual extends Visual
                 it.render();
                 
             }
-            else
-            if(keyCode == DOWN)
-            {
-                //scene 2
-                wv = new WavesVisual(this);
-                n = new Names(this);
-                wv.render();
-                n.render();
-            }
-            else 
+            
             if(keyCode == LEFT)
             {
                 //scene3
@@ -116,20 +106,27 @@ public class MyVisual extends Visual
                 abv = new AudioBandsVisual(this);  
                 mn.render();
                 abv.render();
-            }
-            else 
-            if(keyCode == RIGHT)
-            {
-                //scene4
-                wf = new WaveForm(this);
-                wf.render();
-            }
+            } 
+        }
             
+        if(key == BACKSPACE)
+        {
+            //scene 2
+            wv = new WavesVisual(this);
+            n = new Names(this);
+            wv.render();
+            n.render();
         }
 
-        if(key == ENTER)
+        if(key == DELETE)
         {
-            //scene5
+            //scene4
+            wf = new WaveForm(this);
+            wf.render();
+        }
+
+        if(key ==  ENTER)
+        {
             cv = new CirclesVisual(this);
             cv.render();
             cv.display();
