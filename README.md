@@ -4,20 +4,33 @@ Name: Erifeoluwa O Jamgbadi
 
 Student Number:  C18387973
 
-## Instructions
-- Fork this repository and use it a starter project for your assignment
-- Create a new package named your student number and put all your code in this package.
-- You should start by creating a subclass of ie.tudublin.Visual
-- There is an example visualiser called MyVisual in the example package
-- Check out the WaveForm and AudioBandsVisual for examples of how to call the Processing functions from other classes that are not subclasses of PApplet
-
 # Description of the assignment
+My assignment a visual art piece. My assignment responds to the music that is playing.The music, I picked are kpop songs from a boyband called BTS. I was inspired by BTS(korean artist group) stage preformances and the beat of the song, which is dionysus and a bit of a verse from ddaeng. This is a 2D project.  There are differnt shapes such as squares, circles visuals etc reacting to the music by changing colors and shapes. I watched their different stage preformances and the energy from it, inspired me to make the different visuals, that I created.
+
+I implemented individual files. Each file has, it's own *creation* and the names of the file signifies what visual, it is. I have about 9 visuals, which are all 2D. Some of the new techniques, that I had to learn, that are contained in this file are sin, cos, scale, rose mathematics.
 
 # Instructions
+- Fork this repository 
+- In the individual files, you will find the code for each of the visuals e.g. circlevisual, that I implemented 
+- all the individual files are brought together by myVisual.java, so press F5, when you want to compile/run the file
+- Press the keys specified in *HOW it works* to shift/go through the desired images 
 
 # How it works
+UP =
+DOWN =
+TAB =
+RIGHT =
+LEFT =
 
 # What I am most proud of in the assignment
+What I am most proud of in the assigment are:
+1. How some of my visuals turned out, the colours and the presentation.
+1. The rose mathemathics, that I leart from a youtuber, but instead of using vertex, i used the circle for a type of rose/circle visual
+1. How all my individual files came together and interacts, when different keys, that I specified are pressed.
+
+
+# My Youtube video link is
+
 
 # Markdown Tutorial
 
