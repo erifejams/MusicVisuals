@@ -15,6 +15,7 @@ I implemented individual files. Each file has, it's own *creation* and the names
 - all the individual files are brought together by myVisual.java, so press F5, when you want to compile/run the file
 - Press the keys specified under the heading *how it works* to shift/go through the desired visual files
 
+
 # How it works
 Press these keys,  to be able to load these visuas:
 - UP = Intro visual
@@ -23,6 +24,7 @@ Press these keys,  to be able to load these visuas:
 - DELETE = WaveForm visual
 - LEFT = MembersNameDrop and AudioBandsVisual
 - ENTER - CirclesVisual
+
 
 # What I am most proud of in the assignment
 What I am most proud of in the assigment are:
@@ -39,6 +41,7 @@ What I am most proud of in the assigment are:
 1. The imagery, that I created in the visuals.
 
 
+
 # My Youtube video links
 [![YouTube](http://img.youtube.com/vi/OoKRbQnLbT4/0.jpg)](https://youtu.be/OoKRbQnLbT4)
 [![YouTube](http://img.youtube.com/vi/WUqwepm9zbQ/0.jpg)](https://youtu.be/WUqwepm9zbQ)
@@ -52,20 +55,6 @@ What I am most proud of in the assigment are:
 ![An image](images/wavesandname.png)
 ![An image](images/audiobands.png)
 
-
-# Markdown Tutorial
-
-This is *emphasis*
-
-This is a bulleted list
-
-- Item
-- Item
-
-This is a numbered list
-
-1. Item
-1. Item
 
 This is a [hyperlink](http://bryanduggan.org)
 
@@ -95,11 +84,3 @@ public void render()
 	ui.text(text, x + width * 0.5f, y + height * 0.5f);
 }
 ```
-
-
-This is a youtube video:
-
-[![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](https://www.youtube.com/watch?v=J2kHSSFA4NU)
-
-
-
