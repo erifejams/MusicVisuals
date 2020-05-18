@@ -14,10 +14,11 @@ I implemented individual files. Each file has, it's own *creation* and the names
 - In the individual files, you will find the code for each of the visuals e.g. circlevisual, that I implemented 
 - all the individual files are brought together by myVisual.java, so press F5, when you want to compile/run the file
 - Press the keys specified under the heading *how it works* to shift/go through the desired visual files
-
+-if you want to play the other song(DDaeng), you can uncomment it and comment Dionysus song out.
 
 # How it works
-Press these keys,  to be able to load these visuas:
+Press these keys,  to be able to load these visuals:
+
 - UP = Intro visual
 - BACKSPACE = Names and WavesVisual 
 - TAB = SquareVisual
@@ -54,33 +55,3 @@ What I am most proud of in the assigment are:
 ![An image](images/Waveform.png)
 ![An image](images/wavesandname.png)
 ![An image](images/audiobands.png)
-
-
-This is a [hyperlink](http://bryanduggan.org)
-
-
-This is code:
-
-```Java
-public void render()
-{
-	ui.noFill();
-	ui.stroke(255);
-	ui.rect(x, y, width, height);
-	ui.textAlign(PApplet.CENTER, PApplet.CENTER);
-	ui.text(text, x + width * 0.5f, y + height * 0.5f);
-}
-```
-
-So is this without specifying the language:
-
-```
-public void render()
-{
-	ui.noFill();
-	ui.stroke(255);
-	ui.rect(x, y, width, height);
-	ui.textAlign(PApplet.CENTER, PApplet.CENTER);
-	ui.text(text, x + width * 0.5f, y + height * 0.5f);
-}
-```
