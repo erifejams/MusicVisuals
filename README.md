@@ -17,7 +17,7 @@ I implemented individual files. Each file has, it's own *creation* and the names
 
 
 # How it works
-Press these keys,  to be able to load these visuas:
+Press these keys,  to be able to load these visuals:
 
 - UP = Intro visual
 - BACKSPACE = Names and WavesVisual 
