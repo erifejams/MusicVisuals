@@ -18,7 +18,6 @@ I implemented individual files. Each file has, it's own *creation* and the names
 
 # How it works
 Press these keys,  to be able to load these visuas:
-*warning: if you go from enter to backspace, depending on, if your computer lags, it may freeze, the file running so you might have to force close the processing display editor*
 
 - UP = Intro visual
 - BACKSPACE = Names and WavesVisual 
